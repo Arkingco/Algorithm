@@ -1,6 +1,11 @@
 
 function solution(n, edge) {
-    const arr = new Array(n).fill().map(_ => []);
+
+    const arr = new Array(n);
+
+    for (var i = 0; i < n; i++) {
+        arr[i] = new Array(0);
+    }
 
     for(const e of edge) {
       arr[e[0]-1].push(e[1]-1);
