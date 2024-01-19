@@ -1,6 +1,5 @@
 function solution(name, yearning, photo) {
     var answer = [];
-    
     var nameNumber = [];
     
     for (let i=0; i<name.length; ++i) 
