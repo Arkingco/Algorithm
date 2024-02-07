@@ -1,7 +1,9 @@
 function solution(s, n) {
-  let str = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY                          ";
-  return s
-    .split('')
-    .map((word) => str[str.indexOf(word) + n])
-    .join('');
+    const answer = [];
+    const str = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY                          ";
+    for (let i=0; i<s.length; ++i) {
+        const index = str.indexOf(s[i]);
+        answer.push(str[index + n]);        
+    }
+    return answer.join('')
 }
