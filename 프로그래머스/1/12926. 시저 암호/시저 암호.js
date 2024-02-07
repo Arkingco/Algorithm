@@ -1,6 +1,6 @@
 function solution(s, n) {
     const answer = [];
-    const str = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY                          ";
+    const str = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ                          ";
     for (let i=0; i<s.length; ++i) {
         const index = str.indexOf(s[i]);
         answer.push(str[index + n]);        
