@@ -8,6 +8,6 @@ function solution(number, k) {
         }
         answer.push(number[i]);
     }
-    answer.splice(answer.length - k, k);
-    return answer.join('');
+    
+    return answer.splice(0, answer.length - k).join('');
 }
